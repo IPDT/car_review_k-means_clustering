@@ -1,5 +1,5 @@
 # k-means clustering for car reviews
-## 3 dataset
+## there's 3 dataset as below
 ### car reviews
 * 10 classes (before cluster)
   * Audio and Infotainment
