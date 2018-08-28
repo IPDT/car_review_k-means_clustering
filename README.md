@@ -40,7 +40,7 @@
 
 * cost trend
 
-![car_review]("./car_review_(5,15).png")
+    ![car reviews]("./car_review_(5,15).png")
 
 ### edmunds
 * result
@@ -49,7 +49,7 @@
 ```
 * cost trend
 
-![edmunds]("./edmunds_(5,15).png")
+    ![edmunds]("./edmunds_(5,15).png")
 
 ### thecarconnection
 ```
