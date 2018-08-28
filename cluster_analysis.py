@@ -8,7 +8,6 @@ from sklearn.cluster import KMeans, MiniBatchKMeans
 
 def load_dataset(data_path: str):
     dataset = []
-    index = 0
     with open(data_path, 'r', encoding='utf8') as f:
         while True:
             line = f.readline()
@@ -50,14 +49,14 @@ def train(X, vectorizer, true_k=10, minibatch=False, showLable=False):
     return -km.score(X)
 
 
-def test():
+def test(data_path: str):
     '''测试选择最优参数'''
-    dataset = load_dataset()
+    dataset = load_dataset(data_path=data_path)
     print("%d documents" % len(dataset))
     X, vectorizer = transform(dataset, n_features=500)
     true_ks = []
     scores = []
-    for i in range(3, 80, 1):
+    for i in range(3, 8):
         score = train(X, vectorizer, true_k=i) / len(dataset)
         print(i, score)
         true_ks.append(i)
@@ -70,10 +69,10 @@ def test():
     plt.show()
 
 
-def out():
-    dataset = load_dataset(data_path=car_reviews_path)
+def out(data_path: str, true_k=10):
+    dataset = load_dataset(data_path=data_path)
     X, vectorizer = transform(dataset, n_features=500)
-    score = train(X, vectorizer, true_k=1000, showLable=True) / len(dataset)
+    score = train(X, vectorizer, true_k=true_k, showLable=True) / len(dataset)
     print(score)
 
 
@@ -82,5 +81,11 @@ if __name__ == '__main__':
     edmunds_path = '/Users/gbzhu/dataset/merge_data01/edmunds/merge.txt'
     thecarconnection_path = '/Users/gbzhu/dataset/merge_data01/thecarconnection/merge.txt'
 
-    # test()
-    out()
+    # out(data_path=car_reviews_path, true_k=10)
+    # test(data_path=car_reviews_path)
+
+    # out(data_path=edmunds_path, true_k=8)
+    # test(data_path=edmunds_path)
+
+    # out(data_path=thecarconnection_path, true_k=5)
+    test(data_path=thecarconnection_path)
