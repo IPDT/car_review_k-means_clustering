@@ -36,6 +36,21 @@
 ### car reviews
 * result
 ```
+Top terms per cluster:
+None
+Cluster 0: with standard wheel is automatic speed on for all drive
+Cluster 1: assigns stars overall nhtsa cars five rating an out quicker
+Cluster 2: to it is of in its that but for as
+Cluster 3: visibility by laser roof pillar width location pillars blind spots
+Cluster 4: system infotainment inch touchscreen is standard to apple android carplay
+Cluster 5: seat rear seats space of in cargo to front is
+Cluster 6: highway mpg our fuel loop on economy epa 200 mile
+Cluster 7: usb devices current all response amps latency ports following times
+Cluster 8: sound decibels pressure at of meter while is 70 cruising
+Cluster 9: safety iihs pick tests top vehicles highway nhtsa crashworthiness evaluate
+Cluster distribution:
+{0: 5189, 2: 10189, 6: 1563, 4: 1780, 5: 3180, 8: 1015, 1: 823, 3: 1921, 7: 1046, 9: 706}
+0.853754658731952
 ```
 
 * cost trend
@@ -45,7 +60,19 @@
 ### edmunds
 * result
 ```
-
+Top terms per cluster:
+None
+Cluster 0: are available on of there to as for seats in
+Cluster 1: mph 60 in seconds testing edmunds from zero to feet
+Cluster 2: system power inch with package rear wheels adds an heated
+Cluster 3: to it of you can be but in is that
+Cluster 4: mpg speed transmission automatic combined city manual six highway is
+Cluster 5: torque liter hp lb ft of pound feet horsepower produces
+Cluster 6: is in of with for on as trim available that
+Cluster 7: side airbags impact for frontal front stars crash safety curtain
+Cluster distribution:
+{6: 54532, 0: 16175, 3: 38871, 2: 27526, 1: 5957, 4: 11925, 5: 8323, 7: 8939}
+0.8781821498579485
 ```
 * cost trend
 

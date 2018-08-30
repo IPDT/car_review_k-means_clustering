@@ -69,7 +69,7 @@ def test(data_path: str):
     plt.show()
 
 
-def out(data_path: str, true_k=10):
+def out(data_path: str, truek=10):
     dataset = load_dataset(data_path=data_path)
     X, vectorizer = transform(dataset, n_features=500)
     score = train(X, vectorizer, true_k=true_k, showLable=True) / len(dataset)
@@ -88,4 +88,4 @@ if __name__ == '__main__':
     # test(data_path=edmunds_path)
 
     # out(data_path=thecarconnection_path, true_k=5)
-    test(data_path=thecarconnection_path)
+    # test(data_path=thecarconnection_path)
