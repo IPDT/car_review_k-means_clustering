@@ -2,18 +2,18 @@
 ## Three dataset as below
 ### tags before cluster
 
-   car_reviews|edmunds|thecarconnection
-   -|:-:|-: 
-   Audio and Infotainment|comfort|green
-   Cargo Space and Storage|driving|performance
-   Driving Impressions and Performance|interior|quality
-   Exterior Design and Dimensions|performance & mpg|safety
-   Fuel Economy and Driving Range|safety|styling
-   Interior and Passenger Space|technology|
-   Powertrain and Charging|trim levels & features|
-   Safety and Driver Assistance|utility|
-   Warranty and Maintenance Coverage|
-   Engine and Transmission|
+   |car_reviews|edmunds|thecarconnection
+   :-:|:-:|:-:|:-:
+   1|Audio and Infotainment|comfort|green
+   2|Cargo Space and Storage|driving|performance
+   3|Driving Impressions and Performance|interior|quality
+   4|Exterior Design and Dimensions|performance & mpg|safety
+   5|Fuel Economy and Driving Range|safety|styling
+   6|Interior and Passenger Space|technology|
+   7|Powertrain and Charging|trim levels & features|
+   8|Safety and Driver Assistance|utility|
+   9|Warranty and Maintenance Coverage|
+   10|Engine and Transmission|
     
 ### edmunds
 * 8 classes (before cluster)
