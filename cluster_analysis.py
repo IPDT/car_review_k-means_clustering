@@ -77,15 +77,15 @@ def out(data_path: str, true_k=10):
 
 
 if __name__ == '__main__':
-    car_reviews_path = '/home/I342202/dataset/merge_data01/car_reviews/merge.txt'
-    edmunds_path = '/home/I342202/dataset/merge_data01/edmunds/merge.txt'
-    thecarconnection_path = '/home/I342202/dataset/merge_data01/thecarconnection/merge.txt'
+    car_reviews_path = '/home/I342202/dataset/merge_data02/car_reviews.txt'
+    edmunds_path = '/home/I342202/dataset/merge_data02/edmunds.txt'
+    thecarconnection_path = '/home/I342202/dataset/merge_data02/thecarconnection.txt'
 
     # out(data_path=car_reviews_path, true_k=10)
     # test(data_path=car_reviews_path)
 
     # out(data_path=edmunds_path, true_k=8)
-    test(data_path=edmunds_path)
+    # test(data_path=edmunds_path)
 
     # out(data_path=thecarconnection_path, true_k=5)
     # test(data_path=thecarconnection_path)

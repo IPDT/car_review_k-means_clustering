@@ -1,6 +1,6 @@
 # k-means clustering for car reviews
 ## Three dataset as below
-### tags before cluster
+### Tags before cluster
 
    ||car_reviews|edmunds|thecarconnection
    :-:|:-:|:-:|:-:
@@ -15,12 +15,11 @@
    9|Warranty and Maintenance Coverage|
    10|Engine and Transmission|
  
-## first version of k-means cluster
-### car reviews
-* result
+## Result of k-means cluster with diffrence dataset
+* car reviews
+    * result (version 1)
     ```
-    Top terms per cluster:
-    None
+    Top terms per cluster:None
     Cluster 0: with standard wheel is automatic speed on for all drive
     Cluster 1: assigns stars overall nhtsa cars five rating an out quicker
     Cluster 2: to it is of in its that but for as
@@ -34,6 +33,23 @@
     Cluster distribution:
     {0: 5189, 2: 10189, 6: 1563, 4: 1780, 5: 3180, 8: 1015, 1: 823, 3: 1921, 7: 1046, 9: 706}
     0.853754658731952
+    ```
+    * result (version 2)
+    ```
+    Top terms per cluster:None
+    Cluster 0: safety nhtsa cars stars iihs assigns rating overall five pick
+    Cluster 1: steering wheel car drive sport ride like class driving road
+    Cluster 2: sound decibels pressure meter 70 15 cruising seconds mph noise
+    Cluster 3: pillars visibility highway replicate fuel attempt test economy people devised
+    Cluster 4: laser width pillar location visibility machine point road determine device
+    Cluster 5: usb devices frame response infotainment various measure ports latency following
+    Cluster 6: michigan 94 entails procedure 200 loop mile out and back
+    Cluster 7: seat rear seats space cargo front row storage interior legroom
+    Cluster 8: liter speed automatic transmission engine four cylinder six turbocharged drive
+    Cluster 9: standard system inch features infotainment available touchscreen package safety optional
+    Cluster distribution:
+    {0: 1531, 1: 11442, 2: 801, 3: 1294, 4: 1313, 5: 1292, 6: 361, 7: 3347, 8: 2309, 9: 3722}
+    0.8708904899684552
     ```
 
 * cost trend
@@ -57,8 +73,7 @@
 ### edmunds
 * result
     ```
-    Top terms per cluster:
-    None
+    Top terms per cluster:None
     Cluster 0: are available on of there to as for seats in
     Cluster 1: mph 60 in seconds testing edmunds from zero to feet
     Cluster 2: system power inch with package rear wheels adds an heated
@@ -102,8 +117,7 @@
 ### thecarconnection
 * result
     ```
-    Top terms per cluster:
-    None
+    Top terms per cluster:None
     Cluster 0: safety crash side for test airbags iihs of in features
     Cluster 1: mpg highway city combined epa at drive with fuel rated
     Cluster 2: of it to is in that with on its for
