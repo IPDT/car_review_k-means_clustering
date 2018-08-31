@@ -16,7 +16,7 @@
    10|Engine and Transmission|
  
 ## Result of k-means cluster with difference dataset
-* car reviews
+* **car reviews**
     * result (version 1)
         ```
         Top terms per cluster: None
@@ -70,10 +70,11 @@
         Cluster 14: {0: 990, 1: 3929, 2: 1449, 3: 2052, 4: 798, 5: 689, 6: 354, 7: 627, 8: 939, 9: 361, 10: 10006, 11: 640, 12: 1573, 13: 3005} 0.8121522578356923
         ```
     * cost trend (version 2)
+    
         ![car reviews](pictures/car_review_(5,15)_v2.png)
 
 
-* edmunds
+* **edmunds**
     * result (version 1)
         ```
         Top terms per cluster: None
@@ -134,9 +135,23 @@
     * cost trend (version 2)
     
         ![edmunds](pictures/edmunds_(5,15)_v2.png)
+        ```
+        172248 documents
+        Cluster distribution:
+        {0: 5733, 1: 131837, 2: 9028, 3: 16375, 4: 9275} 5 0.9150191194684022
+        {0: 9235, 1: 31662, 2: 100199, 3: 8677, 4: 7728, 5: 14747} 6 0.9093592075442383
+        {0: 95990, 1: 14582, 2: 5595, 3: 31058, 4: 10391, 5: 5885, 6: 8747} 7 0.8954610745906639
+        {0: 103684, 1: 8691, 2: 31773, 3: 4491, 4: 7708, 5: 4883, 6: 4844, 7: 6174} 8 0.8862422868799427
+        {0: 86767, 1: 16153, 2: 5677, 3: 6125, 4: 7620, 5: 8608, 6: 13358, 7: 18746, 8: 9194} 9 0.8768866770665451
+        {0: 8149, 1: 8520, 2: 7427, 3: 4493, 4: 4770, 5: 7937, 6: 18405, 7: 85456, 8: 16069, 9: 11022} 10 0.881543905095435
+        {0: 105546, 1: 1776, 2: 1598, 3: 4848, 4: 4517, 5: 4321, 6: 2438, 7: 19874, 8: 16132, 9: 2304, 10: 8894} 11 0.8917586699694955
+        {0: 75274, 1: 18088, 2: 4863, 3: 13558, 4: 4729, 5: 6101, 6: 8420, 7: 4463, 8: 6830, 9: 15897, 10: 7956, 11: 6069} 12 0.861746858647752
+        {0: 3945, 1: 14090, 2: 6087, 3: 72374, 4: 17804, 5: 5666, 6: 9075, 7: 8383, 8: 7409, 9: 6294, 10: 8058, 11: 4310, 12: 8753} 13 0.8606385284952195
+        {0: 70139, 1: 6658, 2: 15814, 3: 4478, 4: 11507, 5: 8408, 6: 4852, 7: 5555, 8: 15208, 9: 6062, 10: 10308, 11: 3534, 12: 4704, 13: 5021} 14 0.8453955357082513
+        ```
 
 
-* thecarconnection
+* **thecarconnection**
     * result (version 1)
         ```
         Top terms per cluster:None
@@ -150,6 +165,17 @@
         0.9117029397988335
         ```
     * result (version 2)
+        ```
+        Top terms per cluster: None
+        Cluster 0: speed engine liter automatic horsepower transmission mph torque hp 60
+        Cluster 1: safety crash side test iihs airbags features standard scores top
+        Cluster 2: mpg highway city combined epa drive fuel rated wheel 22
+        Cluster 3: car like interior steering look road well cars fuel new
+        Cluster 4: seats seat space comfort rear front room cargo row back
+        Cluster distribution:
+        {0: 11423, 1: 10444, 2: 5516, 3: 65745, 4: 14587}
+        0.9344144267916032
+        ```
 
     * cost trend (version 1)
     
@@ -164,5 +190,17 @@
         Cluster 7: {6: 36020, 1: 13401, 2: 18572, 5: 16371, 3: 8934, 4: 9251, 0: 5166} 0.9035498516286458
         ```
     * cost trend (version 2)
+    
+        ![thecarconnection](pictures/thecarconnection_(3,8)_v2.png)
+        ```
+        107715 documents
+        Cluster distribution:
+        {0: 10604, 1: 20721, 2: 76390} 3 0.9497155380672195
+        {0: 15756, 1: 5718, 2: 10498, 3: 75743} 4 0.94166350625464
+        {0: 13807, 1: 61575, 2: 16764, 3: 10347, 4: 5222} 5 0.9365327696440205
+        {0: 4147, 1: 58090, 2: 16395, 3: 5156, 4: 13694, 5: 10233} 6 0.9328593402751485
+        {0: 11724, 1: 53601, 2: 8284, 3: 10201, 4: 5397, 5: 8470, 6: 10038} 7 0.9250371903541582
+        ```
+
 
   

@@ -56,7 +56,7 @@ def test(data_path: str):
     X, vectorizer = transform(dataset, n_features=500)
     true_ks = []
     scores = []
-    for i in range(5, 15):
+    for i in range(3, 8):
         score = train(X, vectorizer, true_k=i) / len(dataset)
         print(i, score)
         true_ks.append(i)
@@ -88,4 +88,4 @@ if __name__ == '__main__':
     # test(data_path=edmunds_path)
 
     # out(data_path=thecarconnection_path, true_k=5)
-    # test(data_path=thecarconnection_path)
+    test(data_path=thecarconnection_path)
