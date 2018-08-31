@@ -1,18 +1,20 @@
 # k-means clustering for car reviews
-## there's 3 dataset as below
-### car reviews
-* 10 classes (before cluster)
-  * Audio and Infotainment
-  * Cargo Space and Storage
-  * Driving Impressions and Performance
-  * Engine and Transmission
-  * Exterior Design and Dimensions
-  * Fuel Economy and Driving Range
-  * Interior and Passenger Space
-  * Powertrain and Charging
-  * Safety and Driver Assistance
-  * Warranty and Maintenance Coverage
-  
+## Three dataset as below
+### tags before cluster
+
+   car_reviews|edmunds|thecarconnection
+   -|:-:|-: 
+   Audio and Infotainment|comfort|green
+   Cargo Space and Storage|driving|performance
+   Driving Impressions and Performance|interior|quality
+   Exterior Design and Dimensions|performance & mpg|safety
+   Fuel Economy and Driving Range|safety|styling
+   Interior and Passenger Space|technology|
+   Powertrain and Charging|trim levels & features|
+   Safety and Driver Assistance|utility|
+   Warranty and Maintenance Coverage|
+   Engine and Transmission|
+    
 ### edmunds
 * 8 classes (before cluster)
   * comfort
@@ -142,5 +144,4 @@
     Cluster 6: {1: 13305, 2: 22135, 4: 47575, 5: 9897, 0: 9604, 3: 5199} 0.9067644559857724
     Cluster 7: {6: 36020, 1: 13401, 2: 18572, 5: 16371, 3: 8934, 4: 9251, 0: 5166} 0.9035498516286458
     ```
- 
   
