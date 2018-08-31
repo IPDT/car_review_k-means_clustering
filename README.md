@@ -14,25 +14,6 @@
    8|Safety and Driver Assistance|utility|
    9|Warranty and Maintenance Coverage|
    10|Engine and Transmission|
-    
-### edmunds
-* 8 classes (before cluster)
-  * comfort
-  * driving
-  * interior
-  * performance & mpg
-  * safety
-  * technology
-  * trim levels & features
-  * utility
-  
-### thecarconnection
-* 5 classes (before cluster)
-  * green
-  * performance
-  * quality
-  * safety
-  * styling
  
 ## first version of k-means cluster
 ### car reviews
