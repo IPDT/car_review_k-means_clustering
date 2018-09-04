@@ -15,7 +15,7 @@ def get_words(txt):
             c[x] += 1
     print('常用词频度统计结果')
     k_list = []
-    for (k, v) in c.most_common(1500):
+    for (k, v) in c.most_common(5000):
         k_list.append(k)
         print('%s%s %s  %d' % ('  ' * (5 - len(k)), k, '*' * 5, v))
 
