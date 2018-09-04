@@ -1,5 +1,6 @@
 import pymysql
 import re
+from wordfreqcount import get_words
 
 conn = pymysql.connect(host='localhost', user='I339493', password='test123', db='ml_features_en')
 cursor = conn.cursor()
@@ -25,7 +26,7 @@ def word_freq(sents_list: list):
     return word_freq
 
 
-if __name__ == '__main__':
+def en_freq():
     sql = "select data from RAW_DATA"
     cursor.execute(sql)
     result = list(cursor.fetchall())
@@ -48,3 +49,28 @@ if __name__ == '__main__':
             line = str(index) + " : " + key + " : " + str(value) + "\n"
             index += 1
             f.write(line)
+
+
+def cn_freq():
+    sql = "select translate from RAW_DATA"
+    cursor.execute(sql)
+    result = cursor.fetchall()
+    index = 1
+    with open('./cn_translations.txt', 'w') as f:
+        for line in result:
+            if index % 10000 == 0:
+                print(index)
+            f.write(line[0] + '\n')
+            index += 1
+    cursor.close()
+    conn.close()
+
+
+if __name__ == '__main__':
+    # en_freq()
+    # cn_freq()
+    with open('./cn_translations.txt', 'r', encoding='utf8') as f:
+        k_list = get_words(f.read())
+    with open('./word_freq_cn_v1.txt', 'w') as f:
+        for k in k_list:
+            f.write(k + '\n')
